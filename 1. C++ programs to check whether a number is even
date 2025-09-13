@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int num;
+    cout<<"Enter a nubmer: "; //Asking user for a number 
+    cin>>num; //Reading and storing a number
+    if (num % 2 == 0)
+      {
+          cout<<"The entered number "<<num<<" is even."<<endl;
+      }
+      else
+      {
+          cout<<"The entered number is not even."<<endl;
+      }
+
+}
