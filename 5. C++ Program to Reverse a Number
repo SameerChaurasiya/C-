@@ -1,0 +1,18 @@
+// C++ Program to Reverse a Number
+#include<iostream>
+using namespace std;
+int  main()
+{
+    int n, rev = 0, digit;
+    cout<<"Enter a multiple digit number: ";
+    cin>>n;
+    int copy_number = n; // Store the original number for later use
+    while (n != 0)
+    {
+        digit = n % 10;
+        rev = rev * 10 + digit;
+        n = n / 10;
+    }
+    cout<<"Entered number is "<<copy_number<<endl;
+    cout<<"Reversed number is "<<rev<<endl;
+}
