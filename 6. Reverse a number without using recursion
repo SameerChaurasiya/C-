@@ -1,0 +1,50 @@
+#include<iostream>
+using namespace std;
+int main()
+//using while loop
+{
+    int n, rev = 0, digit;
+    cout<<"Enter a multiple digit number: ";
+    cin>>n;
+    int copy_number = n; // Store the original number for later use
+    while (n != 0)
+    {
+        digit = n % 10;
+        rev = rev * 10 + digit;
+        n = n / 10;
+    }
+    cout<<"Entered number is "<<copy_number<<endl;
+    cout<<"Reversed number is "<<rev<<endl;
+}
+
+//using do while loop
+{
+     int n, rev = 0, digit;
+    cout<<"Enter a multiple digit number: ";
+    cin>>n;
+    int copy_number = n; // Store the original number for later use
+    do
+    {
+        digit = n % 10;
+        rev = rev * 10 + digit;
+        n = n / 10;
+    }
+    while (n != 0);
+    cout<<"Entered number is "<<copy_number<<endl;
+    cout<<"Reversed number is "<<rev<<endl;
+}
+
+{
+    int n, rev = 0, digit;
+    cout<<"Enter a multiple digit number: ";
+    cin>>n;
+    int copy_number = n; // Store the original number for later use
+    for( ; n!=0 ; )
+    {
+        digit = n % 10;
+        rev = rev * 10 + digit;
+        n = n / 10;
+    }
+    cout<<"Entered number is "<<copy_number<<endl;
+    cout<<"Reversed number is "<<rev<<endl;
+}
